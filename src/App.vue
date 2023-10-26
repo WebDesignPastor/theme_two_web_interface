@@ -1,16 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <UserProfile msg="Welcome to Your Vue.js App"/>
+  <WorkingTime/>
+  <WorkingTimes/>
+  <ChartManager/>
+  <ClockManager/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChartManager from './components/ChartManager.vue';
+import ClockManager from './components/ClockManager.vue';
+import UserProfile from './components/UserProfile.vue';
+import WorkingTime from './components/WorkingTime.vue';
+import WorkingTimes from './components/WorkingTimes.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    UserProfile,
+    WorkingTime,
+    WorkingTimes,
+    ChartManager,
+    ClockManager
+}
 }
 </script>
 
